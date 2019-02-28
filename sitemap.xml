@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://hcm-photos-dresden.de</loc>
+<lastmod>2018-01-22</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>http://hcm-photos-dresden.de/editorial</loc>
+<lastmod>2018-01-22</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>http://hcm-photos-dresden.de/impressum</loc>
+<lastmod>2018-03-21</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://hcm-photos-dresden.de/kontakt</loc>
+<lastmod>2018-03-20</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+</urlset>
+
+
