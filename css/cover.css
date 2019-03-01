@@ -1,315 +1,297 @@
-.noscript {
-  font-size: 26px;
-  text-align: center;
-  display: inline-block;
-  color: #eb807a;
+.shadow, body, html {
+    height: 100%
 }
 
-.noscript > a {
-  color: #e55952;
-}
-
-#ifr { 
-    max-height: 0; 
-    overflow: hidden; 
-    transition: max-height 500ms;
-}
-#ifr.active {
-    max-height: 1000px;
-}
-
-html,
 body {
-  height: 100%;
-
-}
-body {
-  color: #555;
-  text-shadow: 0px 1px 1px rgba(0,0,0,.4);
-  overflow-y: scroll;
+    color: #555;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    overflow-y: scroll
 }
 
 .shadow {
-  width:100%; 
-  height:100%; 
-  z-index:10;
-  top:0; 
-  left:0; 
-  position:fixed; 
-  -webkit-box-shadow: inset 0 0 100px rgba(27, 83, 116, 0.5);
-          box-shadow: inset 0 0 100px rgba(27, 83, 116, 0.5); 
-  pointer-events: none;
-  background: transparent;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+    -webkit-box-shadow: inset 0 0 100px rgba(27, 83, 116, .5);
+    box-shadow: inset 0 0 100px rgba(27, 83, 116, .5);
+    pointer-events: none;
+    background: 0 0
 }
 
-.site-wrapper-inner > img {
-  height: 87px;
-  width: 87px;
-  position: absolute;
-  top: 40px;
-  right: 50px;
+.noscript {
+    font-size: 26px;
+    text-align: center;
+    display: inline-block;
+    color: #eb807a
+}
+
+.noscript > a {
+    color: #e55952
 }
 
 h3 {
-  line-height: 0.5;
-  margin-bottom: 20px
-}
-
-.contactlink {
-  color: #555;
-  cursor: pointer;
-  transition: color 0.15s linear;
-   -webkit-transition: color 0.15s linear;
-   -moz-transition: color 0.15s linear;
-
-}
-
-.contactlink:hover, .contactlink:focus {
-  color: rgba(0,0,0,.3);
+    line-height: .5;
+    margin-bottom: 20px
 }
 
 /* ------------------------------------------------------------ wrapper etc. */
 
 .site-wrapper {
-  background-color: rgba(240, 240, 240, 1);
-  display: table;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%
 }
+
 .site-wrapper-inner {
-  display: table-cell;
+    display: table-cell
+}
+
+.qr {
+    height: 87px;
+    width: 87px;
+    position: absolute;
+    top: 40px;
+    right: 50px
 }
 
 .cover-container {
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto
 }
 
 .inner {
-  padding: 30px;
-  margin: 10px;
-  margin-top: 6%;
+    padding: 30px;
+    margin: 6% 10px 10px
 }
 
 .cover {
-  padding: 0 20px;
+    padding: 0 20px
 }
 
 .clear {
-  clear: both;
-  height: 170px;
+    clear: both;
+    height: 170px
+}
+
+.masthead,
+.site-wrapper {
+    background-color: rgba(240, 240, 240, 1)
 }
 
 /* ------------------------------------------------------------ header */
 
 .masthead {
-  position: fixed;
-  top: 0;
-  padding: 35px 30px 20px;
-  margin-right: 20px;
-  background-color: rgba(240, 240, 240, 1);
+    position: fixed;
+    top: 0;
+    padding: 30px 30px 15px;
+    margin-right: 20px
 }
 
 .masthead-brand {
-  margin: 4px 0px 10px -15px;
-  outline: none;
+    margin: 4px 0 10px -15px;
+    outline: 0
 }
 
-.masthead-nav > li,
-.masthead-nav > .dropdown > li {
-  display: inline-block;
-  padding-top: 15px;
+.masthead-brand > img {
+    width: 78%
 }
 
-.masthead-nav > li + li, 
-.masthead-nav > li + .dropdown,
-.masthead-nav > .dropdown + li {
-  margin-left: 20px;
+.masthead-nav > li {
+    display: inline-block;
+    padding-top: 15px
 }
 
-.masthead-nav > li > a,
-.masthead-nav > .dropdown > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 24px;
-  font-weight: bold;
-  color: #007fc8;
-  text-shadow: 0 1px 4px rgba(0,0,0,.7);
-  transition: color 0.15s linear;
-   -webkit-transition: color 0.15s linear;
-   -moz-transition: color 0.15s linear;
-  border-bottom: 2px solid transparent;
-  outline: none;
+.masthead-nav > li + li {
+    margin-left: 20px
 }
 
-.masthead-nav > li > a:hover,
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #007fc8;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    transition: color .15s linear;
+    -webkit-transition: color .15s linear;
+    -moz-transition: color .15s linear;
+    border-bottom: 2px solid transparent;
+    outline: 0
+}
+
 .masthead-nav > li > a:focus,
-.masthead-nav > .dropdown > li > a:hover,
-.masthead-nav > .dropdown > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  color: #c7261e;  
+.masthead-nav > li > a:hover {
+    background-color: transparent;
+    border-bottom-color: #c7261e;
+    color: #0071b3
 }
 
 .masthead-nav > .active > a,
-.masthead-nav > .active > a:focus, 
-.masthead-nav > .dropdown > .active > a,
-.masthead-nav > .dropdown > .active > a:focus {
-  color: #0071b3;
-  border-bottom-color: #c7261e;
+.masthead-nav > .active > a:focus {
+    color: #0071b3;
+    border-bottom-color: #c7261e
 }
 
 .qr {
-  visibility: hidden;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
-/* ------------------------------------------------------------ dropdown */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  background-color: rgba(235, 235, 235, 1);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  transition: opacity 0.1s linear, visibility 0.1s linear;
-  -webkit-transition: opacity 0.1s linear, visibility 0.1s linear;
-  -moz-transition: opacity 0.1s linear, visibility 0.1s linear;
-}
-
-.dropdown-content:after {
-  content:"Galerie"; 
-  font-size: 24px;
-  font-weight: bold;
-  text-indent: -100%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #a9a9a9; 
-  position: absolute; 
-  top: -2; 
-  left: 0; 
-  width:; 
-  height: 2px;
-}
-
-.dropdown-content a {
-  font-size: 18px;
-  font-weight: bold;
-  color: rgba(85, 85, 85, .5);
-  text-shadow: 0px 1px 1px rgba(0,0,0,.2);
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.1s linear;
-  -webkit-transition: background-color 0.1s linear;
-  -moz-transition: background-color 0.1s linear;
-  outline: none;
-}
-
-.dropdown-content a:hover {
-  background-color: rgba(230, 230, 230, 1);
-}
-
-.dropdown:hover .dropdown-content {
-  visibility: visible;
-  opacity: 1;
+    visibility: hidden
 }
 
 /* ------------------------------------------------------------ footer */
 
-.mastfoot {
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
-  color: rgba(255, 255, 255, .95);
-  font-weight: bold;
-  text-shadow: 0px 1px 2px rgba(0,0,0,1);
-  background-color: #c7261e;
-  overflow: auto;
-  margin-bottom: 40px; 
-  padding: 8px;
-}
-
-.mastfoot2 {
-  background-color: #007fc8;  
-  margin-bottom: 25px; 
-  padding: 5px;
-}
-
-.mastfoot3{
-  background-color: rgba(240, 240, 240, 1); 
-  height: 50px; 
-  padding: 0px;
-}
-
+.mastfoot,
 .mastfoot > a {
-  color: rgba(255, 255, 255, .95);  
+    color: rgba(255, 255, 255, .95)
 }
 
 .mastfoot > a:focus {
-  text-decoration: none;
+    text-decoration: none
+}
+
+.mastfoot {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    background-color: #c7261e;
+    overflow: auto;
+    margin-bottom: 30px;
+    padding: 6px
+}
+
+.mastfoot2 {
+    background-color: #007fc8;
+    margin-bottom: 15px;
+    padding: 5px
+}
+
+.mastfoot3 {
+    background-color: rgba(240, 240, 240, 1);
+    height: 40px;
+    padding: 0
 }
 
 .mastfoot > a:hover {
-  color: rgba(255, 255, 255, .80);  
+    color: rgba(255, 255, 255, .8)
 }
 
 /* ------------------------------------------------------------ @media */
 
 @media (min-width: 768px) {
-  .mastfoot4 {
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-  }
+    .masthead-brand {
+        float: left
+    }
 
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  .masthead, .mastfoot4, .cover-container {
-    width: 100%; 
-  }
+    .masthead-nav {
+        float: right
+    }
+
+    .qr {
+        visibility: visible
+    }
+
+    .mastfoot4 {
+        position: fixed;
+        bottom: 0;
+        text-align: center
+    }
+
+    .site-wrapper-inner {
+        vertical-align: middle
+    }
+
+    .cover-container,
+    .mastfoot4,
+    .masthead {
+        width: 100%
+    }
 }
 
 @media (min-width: 992px) {
-  .masthead, .cover-container {
-    width: 1000px;
-  }
+    .cover-container,
+    .masthead {
+        width: 1000px
+    }
+}
+
+@media (min-width: 1600px) {
+    .masthead {
+        padding: 35px 30px 20px
+    }
+
+    .masthead-nav > li > a {
+        font-size: 24px
+    }
+
+    .masthead-brand > img {
+        width: 100%
+    }
+
+    .mastfoot {
+        margin-bottom: 40px;
+        padding: 8px;
+        font-size: 14px
+    }
+
+    .mastfoot2 {
+        margin-bottom: 25px
+    }
+
+    .mastfoot3 {
+        height: 50px;
+    }
 }
 
 @media screen and (max-device-width: 400px) {
-  .masthead-nav > li > a,
-  .masthead-nav > .dropdown > li > a {
-    font-size: 36px;
-  }
-  .mastfoot {
-    font-size: 115%;
-  }
+    .masthead-nav > li > a {
+        font-size: 36px
+    }
+
+    .mastfoot {
+        font-size: 115%
+    }
 }
 
-@media screen and (max-device-width: 640px) and (orientation:landscape) {
-  .masthead {
-    padding: 0px 10px;
-    margin: 0px;
-  }
-  .mastfoot, .mastfoot2, .mastfoot3, .qr {
-    visibility: hidden;
-  }
-  .inner {
-    margin-top: 10%;
-  }
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    .masthead {
+        padding: 0 10px;
+        margin: 0
+    }
+
+    .mastfoot,
+    .mastfoot2,
+    .mastfoot3,
+    .qr {
+        visibility: hidden
+    }
+
+    .inner {
+        margin-top: 10%
+    }
+}
+
+/* ------------------------------------------------------------ Contact formatting */
+
+#ifr {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s
+}
+
+#ifr.active {
+    max-height: 1000px
+}
+
+.contactlink {
+    color: #555;
+    cursor: pointer;
+    transition: color .15s linear;
+    -webkit-transition: color .15s linear;
+    -moz-transition: color .15s linear
+}
+
+.contactlink:focus, .contactlink:hover {
+    color: rgba(0, 0, 0, .3)
 }
